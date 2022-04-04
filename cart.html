@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	<title>Cart</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+	<!--PreLoader-->
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <!--PreLoader Ends-->
+	
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logoBonaDrinks.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">Acerca de Nosotros</a></li>
+								<li><a href="#">Secciones</a>
+									<ul class="sub-menu">
+										<li><a href="about.html">Acerca de Nosotros</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li><a href="shop.html">Nuestros Productos</a>
+									<ul class="sub-menu">
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Bona Drinks</p>
+						<h1>Carrito</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- cart -->
+	<div class="cart-section mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 col-md-12">
+					<div class="cart-table-wrap">
+						<table class="cart-table">
+							<thead class="cart-table-head">
+								<tr class="table-head-row">
+									<th class="product-remove"></th>
+									<th class="product-name">Nombre</th>
+									<th class="product-price">Precio</th>
+									<th class="product-quantity">Cantidad</th>
+								</tr>
+							</thead>
+							<tbody id="products-carrito">
+								
+							</tbody>
+						</table>
+						<br><br>
+					</div>
+				</div>
+				
+
+				<div class="col-lg-5">
+					<div class="total-section">
+						<table class="total-table">
+							<thead class="total-table-head">
+								<tr class="table-total-row">
+									<th>Total</th>
+									<th>Precio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="total-data">
+									<td><strong>Subtotal: </strong></td>
+									<td>$<span id="subtotal">precio</span></td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Envio: </strong></td>
+									<td>$<span id="envio">precio</span></td>
+								</tr>
+								<tr class="total-data">
+									<td><strong>Total: </strong></td>
+									<td>$<span id="precioFinal">precio</span></td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="cart-buttons">
+							<a href="shop.html" class="boxed-btn">Seguir Comprando</a>
+							<a href="checkout.html" class="boxed-btn black">Finalizar Compra</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end cart -->
+
+<template id="template-carrito">
+	<tr class="table-body-row">
+		<td class="product-remove"><a class="far fa-window-close"></a>
+		</td>
+		<td class="product-name">product</td>
+		<td class="product-price">$<span>PRECIO</span></td>
+		<td class="product-quantity"><input type="number" min="1" max="20" pattern="^[0-9]+" oninput="validity.valid||(value='')"><span>ㅤㅤ<button type="button" class="btn btn-success submit">✓</button></span></td>
+	</tr>
+</template>
+
+	<!-- jQuery library -->
+	<script src="/assets/js/jquery-1.11.3.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+	<script src="/assets/js/carrito.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	<title>Shop</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+</head>
+
+<body>
+
+	<!--PreLoader-->
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logoBonaDrinks.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">Acerca de Nosotros</a></li>
+								<li><a href="#">Secciones</a>
+									<ul class="sub-menu">
+										<li><a href="about.html">Acerca de Nosotros</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li><a href="shop.html">Nuestros Productos</a>
+									<ul class="sub-menu">
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Nuestras Bebidas</p>
+						<h1>Tienda</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- products -->
+	<div class="product-section mt-150 mb-150">
+		<div class="container">
+			<div class="field" id="searchform">
+				<input type="text" id="searchterm" placeholder="¿Qué producto está buscando?" />
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="product-filters">
+						<ul>
+							<li class="active" data-filter="*">Todos</li>
+							<li data-filter=".Cerveza">Cerveza</li>
+							<li data-filter=".Champagne">Champagne</li>
+							<li data-filter=".Sidra">Sidra</li>
+							<li data-filter=".Gin">Gin</li>
+							<li data-filter=".Vodka">Vodka</li>
+							<li data-filter=".Whisky">Whisky</li>
+							<li data-filter=".Fernet">Fernet</li>
+							<li data-filter=".Energizante">Energizantes</li>
+							<li data-filter=".SinAlcohol">Sin Alcohol</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<select id="price-sort" class="form-control">
+						<option value="price">Random</option>
+						<option data-sorttype="ass" value="price">High To Low</option>
+						<option data-sorttype="dec" value="price">Low To High</option>					
+					</select>
+				</div>
+			</div><br>
+
+			<div class="row product-lists" id="cards">
+
+			</div>
+		</div>
+	</div>
+	<!-- end products -->
+
+
+	<template id="template-card">
+		<div class="col-lg-4 col-md-6 text-center">
+			<div class="single-product-item">
+				<div class="product-image">
+					<a><img src="/assets/img/logoBonaDrinks.png" alt=""></a>
+				</div>
+				<h3 class="product-name">Name</h3>
+				<p>$<span class="product-price">$</span></p>
+				<p><span class="product-details"> ml</span> ml</p>
+				<a class="cart-btn"><i class="fas fa-shopping-cart"></i> Agregar al Carrito</a>
+			</div>
+		</div>
+	</template>
+
+	<!-- jQuery library -->
+	<script src="/assets/js/jquery-1.11.3.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+	<script src="/assets/js/shop.js"></script>
+
+
+</body>
+
+</html>

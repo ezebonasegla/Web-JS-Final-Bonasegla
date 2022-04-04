@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- title -->
+	<title>Check Out</title>
+
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- mean menu css -->
+	<link rel="stylesheet" href="assets/css/meanmenu.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- responsive -->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+	<!-- sweet alert -->
+	<link rel="stylesheet" href="/assets/plugins/sweetalert2.min.css">
+
+</head>
+
+<body>
+
+	<!--PreLoader-->
+	<div class="loader">
+		<div class="loader-inner">
+			<div class="circle"></div>
+		</div>
+	</div>
+	<!--PreLoader Ends-->
+
+	<!-- header -->
+	<div class="top-header-area" id="sticker">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-sm-12 text-center">
+					<div class="main-menu-wrap">
+						<!-- logo -->
+						<div class="site-logo">
+							<a href="index.html">
+								<img src="assets/img/logoBonaDrinks.png" alt="">
+							</a>
+						</div>
+						<!-- logo -->
+
+						<!-- menu start -->
+						<nav class="main-menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">Acerca de Nosotros</a></li>
+								<li><a href="#">Secciones</a>
+									<ul class="sub-menu">
+										<li><a href="about.html">Acerca de Nosotros</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li><a href="shop.html">Nuestros Productos</a>
+									<ul class="sub-menu">
+										<li><a href="shop.html">Productos</a></li>
+										<li><a href="cart.html">Carrito</a></li>
+										<li><a href="checkout.html">Finalizar Compra</a></li>
+									</ul>
+								</li>
+								<li>
+									<div class="header-icons">
+										<a class="shopping-cart" href="cart.html"><i
+												class="fas fa-shopping-cart"></i></a>
+									</div>
+								</li>
+							</ul>
+						</nav>
+						<div class="mobile-menu"></div>
+						<!-- menu end -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<h1>Seccion de Pago</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- check out section -->
+	<div class="checkout-section mt-150 mb-150">
+		<div class="container">
+			<div class="py-5 text-center">
+				<img class="d-block mx-auto mb-4" src="/assets/img/logoBonaDrinks.png" alt="" height="80px">
+				<h2>Finalizar Compra</h2>
+				<p class="lead">Gracias por confiar en Bona Drinks</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 order-md-2 mb-4">
+					<h4 class="d-flex justify-content-between align-items-center mb-3">
+						<span class="text-muted">Carrito</span>
+						<span class="badge badge-secondary badge-pill" id="carritoCantidad">1</span>
+					</h4>
+					<ul class="list-group mb-3" id="itemsCarrito">
+
+					</ul>
+				</div>
+
+				<div class="col-md-8 order-md-1">
+					<h4 class="mb-3">Datos de Compra</h4>
+					<form class="needs-validation" novalidate>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="firstName">Primer Nombre*</label>
+								<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+								<div class="invalid-feedback">
+									Nombre Requerido.
+								</div>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="lastName">Apellido*</label>
+								<input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+								<div class="invalid-feedback">
+									Apellido Requerido.
+								</div>
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="phone">Numero de Telefono*</label>
+							<input type="tel" class="form-control" id="phone" pattern="[0-9].{9,}"
+								placeholder="11-9999-9999" required>
+							<div class="invalid-feedback">
+								Ingrese un numero de telefono valido.
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="address">Direccion*</label>
+							<input type="text" class="form-control" id="address" placeholder="Calle 123" required>
+							<div class="invalid-feedback">
+								Ingrese una direccion valida
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="address2">Entrecalles <span class="text-muted">(Opcional)</span></label>
+							<input type="text" class="form-control" id="address2" placeholder="Calle 1 y Calle 2">
+						</div>
+
+						<div class="row">
+							<div class="col-md-5 mb-3">
+								<label for="province">Provincia*</label>
+								<select class="custom-select d-block w-100" id="province" required>
+									<option value="">Elegir...</option>
+									<option>Buenos Aires</option>
+								</select>
+								<div class="invalid-feedback">
+									Por favor ingrese una provincia valida.
+								</div>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="location">Localidad*</label>
+								<select class="custom-select d-block w-100" id="state" required>
+									<option value="">Elegir...</option>
+									<option>Quilmes</option>
+									<option>Ezpeleta</option>
+									<option>Berazategui</option>
+								</select>
+								<div class="invalid-feedback">
+									Por favor ingrese una localidad valida.
+								</div>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="zip">C.P.*</label>
+								<input type="text" class="form-control" id="zip" placeholder="" required>
+								<div class="invalid-feedback">
+									Por favor ingrese el codigo postal.
+								</div>
+							</div>
+						</div>
+						<hr class="mb-4">
+
+						<h4 class="mb-3">Pago</h4>
+
+						<div class="d-block my-3">
+							<div class="custom-control custom-radio">
+								<input id="credit" name="paymentMethod" type="radio" class="custom-control-input"
+									checked required>
+								<label class="custom-control-label" for="credit">Pago en Efectivo</label>
+							</div>
+
+							<hr class="mb-4">
+							<button class="btn btn-primary btn-lg btn-block" type="button" id="buttonConfirm">Confirmar Compra</button>
+							<hr class="mb-12">
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+
+		<template id="templateCarritoCompra">
+			<li class="list-group-item d-flex justify-content-between lh-condensed">
+				<div>
+					<h6 class="my-0">Producto</h6>
+					<small class="text-muted">Cantidad: <span> num</span></small>
+				</div>
+				<small class="text-muted">$<span class="text-muted">c</span></small>
+			</li>
+		</template>
+
+		<template id="templatePrecioTotal">
+			<li class="list-group-item d-flex justify-content-between">
+				<span>Total</span>
+				<strong>$<span></span></strong>
+			</li>
+		</template>
+
+		<!-- end copyright -->
+
+		<!-- jQuery library -->
+		<script src="/assets/js/jquery-1.11.3.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- count down -->
+		<script src="assets/js/jquery.countdown.js"></script>
+		<!-- isotope -->
+		<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+		<!-- waypoints -->
+		<script src="assets/js/waypoints.js"></script>
+		<!-- owl carousel -->
+		<script src="assets/js/owl.carousel.min.js"></script>
+		<!-- magnific popup -->
+		<script src="assets/js/jquery.magnific-popup.min.js"></script>
+		<!-- mean menu -->
+		<script src="assets/js/jquery.meanmenu.min.js"></script>
+		<!-- sticker js -->
+		<script src="assets/js/sticker.js"></script>
+		<!-- sweet alert js -->
+		<script src="/assets/plugins/sweetalert2.all.min.js"></script>
+		<!-- validation js -->
+		<script src="/assets/js/form-validation.js"></script>
+		<!-- main js -->
+		<script src="assets/js/main.js"></script>
+		<script src="/assets/js/checkout.js"></script>
+		
+
+</body>
+
+</html>

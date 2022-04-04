@@ -1,0 +1,284 @@
+[{
+        "precio": 2400,
+        "id": 1,
+        "title": "Absolut Vodka",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-vodka/atlas/atlas_absolut-vodka_1000ml_4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 7
+    },
+    {
+        "precio": 2700,
+        "id": 2,
+        "title": "Absolut Lime",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-lime/absolut-lime_1000ml4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 9
+    },
+    {
+        "precio": 2700,
+        "id": 3,
+        "title": "Absolut Apple",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-apple/absolut-apple_1000ml4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 9
+    },
+    {
+        "precio": 2800,
+        "id": 4,
+        "title": "Absolut Mango",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-mango/absolut-mango_1000ml4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 8
+        
+    },
+    {
+        "precio": 8200,
+        "id": 5,
+        "title": "Absolut Elyx",
+        "size": 1000,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-elyx/absolut-elyx_1000ml4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 5
+    },
+    {
+        "precio": 3200,
+        "id": 6,
+        "title": "Absolut Extrakt",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-extrakt/absolut-extrakt_1000ml4x.jpg?imwidth=300",
+        "type": "Vodka",
+        "relevance": 3
+    },
+    {
+        "precio": 25000,
+        "id": 7,
+        "title": "Absolut 100",
+        "size": 1000,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-100/absolut-100_1000ml4x.jpg",
+        "type": "Vodka",
+        "relevance": 2
+    },
+    {
+        "precio": 2800,
+        "id": 8,
+        "title": "Absolut Vanilia",
+        "size": 750,
+        "thumbnailUrl": "https://www.absolut.com/globalassets/images/products/absolut-vanilia/absolut-vanilia_1000ml4x.jpg",
+        "type": "Vodka",
+        "relevance": 9
+    },
+    {
+        "precio": 900,
+        "id": 9,
+        "title": "Smirnoff Green Apple",
+        "size": 700,
+        "thumbnailUrl": "/assets/img/productos/vodka/smirnoff-vodka-green-apple.webp",
+        "type": "Vodka",
+        "relevance": 10
+    },
+    {
+        "precio": 900,
+        "id": 10,
+        "title": "Smirnoff Watermelon",
+        "size": 700,
+        "thumbnailUrl": "/assets/img/productos/vodka/smirnoff-vodka-watermelon.webp",
+        "type": "Vodka",
+        "relevance": 10
+    },
+    {
+        "precio": 950,
+        "id": 11,
+        "title": "Smirnoff Citric",
+        "size": 700,
+        "thumbnailUrl": "/assets/img/productos/vodka/smirnoff-vodka-citric-grapefruit-lime.webp",
+        "type": "Vodka",
+        "relevance": 9
+    },
+    {
+        "precio": 850,
+        "id": 12,
+        "title": "Smirnoff Citrus",
+        "size": 700,
+        "thumbnailUrl": "/assets/img/productos/vodka/smirnoff-vodka-citrus.webp",
+        "type": "Vodka",
+        "relevance": 8
+    },
+    {
+        "precio": 900,
+        "id": 13,
+        "title": "Smirnoff Raspberry",
+        "size": 700,
+        "thumbnailUrl": "/assets/img/productos/vodka/smirnoff-vodka-raspberry.webp",
+        "type": "Vodka",
+        "relevance": 10
+    },
+    {
+        "precio": 900,
+        "id": 14,
+        "title": "Fernet Branca 750Ml",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/fernet/fernetbranca.png",
+        "type": "Fernet",
+        "relevance": 10
+    },
+    {
+        "precio": 1600,
+        "id": 15,
+        "title": "Fernet Branca 1Lt",
+        "size": 1000,
+        "thumbnailUrl": "/assets/img/productos/fernet/fernetbranca-1lt.webp",
+        "type": "Fernet",
+        "relevance": 9
+    },
+    {
+        "precio": 200,
+        "id": 16,
+        "title": "Bohemian Pilsener",
+        "size": 410,
+        "thumbnailUrl": "/assets/img/productos/cerveza/bohemian-pilsener.webp",
+        "type": "Cerveza Industrial",
+        "relevance": 5
+    },
+    {
+        "precio": 250,
+        "id": 17,
+        "title": "Schneider Lata",
+        "size": 710,
+        "thumbnailUrl": "/assets/img/productos/cerveza/schneider-Lata-710cc.webp",
+        "type": "Cerveza Industrial",
+        "relevance": 8
+    },
+    {
+        "precio": 300,
+        "id": 18,
+        "title": "Corona Lager Rubia",
+        "size": 710,
+        "thumbnailUrl": "/assets/img/productos/cerveza/corona-710.webp",
+        "type": "Cerveza Importada",
+        "relevance": 8
+    },
+    {
+        "precio": 250,
+        "id": 19,
+        "title": "Corona Rubia Lata",
+        "size": 269,
+        "thumbnailUrl": "/assets/img/productos/cerveza/corona-269.webp",
+        "type": "Cerveza Importada",
+        "relevance": 7
+    },
+    {
+        "precio": 240,
+        "id": 20,
+        "title": "Peñon del Aguila IPA",
+        "size": 473,
+        "thumbnailUrl": "/assets/img/productos/cerveza/penon-del-aguila-bazinga-473.webp",
+        "type": "Cerveza Ipa",
+        "relevance": 5
+    },
+    {
+        "precio": 200,
+        "id": 21,
+        "title": "Ogham IPA Lata",
+        "size": 473,
+        "thumbnailUrl": "/assets/img/productos/cerveza/ogham-ipa-473.webp",
+        "type": "Cerveza Ipa",
+        "relevance": 4
+    },
+    {
+        "precio": 1300,
+        "id": 22,
+        "title": "Chandon Aperitif",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/champagne/champagne-chandon-aperitif-750.webp",
+        "type": "Champagne",
+        "relevance": 8
+    },
+    {
+        "precio": 1000,
+        "id": 23,
+        "title": "Mumm Extra Brut",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/champagne/champagne-mumm-extrabrut-750.webp",
+        "type": "Champagne",
+        "relevance": 6
+    },
+    {
+        "precio": 700,
+        "id": 24,
+        "title": "Sidra Rose 1888",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/sidra/sidra-saenz-1888-750.webp",
+        "type": "Sidra",
+        "relevance": 9
+    },
+    {
+        "precio": 250,
+        "id": 25,
+        "title": "Sidra La Farruka",
+        "size": 710,
+        "thumbnailUrl": "/assets/img/productos/sidra/sidra-la-farruca-710.webp",
+        "type": "Sidra",
+        "relevance": 2
+    },
+    {
+        "precio": 4500,
+        "id": 26,
+        "title": "Gin Bombay Sapphire London Dry",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/gin/gin-bombay-sapphire-london-dry-750.webp",
+        "type": "Gin",
+        "relevance": 7
+    },
+    {
+        "precio": 5000,
+        "id": 27,
+        "title": "Jack Daniel's Old No. 7",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/whisky/jack-daniels-old-750.webp",
+        "type": "Whisky",
+        "relevance": 7
+    },
+    {
+        "precio": 4200,
+        "id": 28,
+        "title": "Whisky Johnnie Walker Black Label Etiqueta Negra",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/whisky/whisky-johnnie-walker-black-label-etiqueta-negra-750.webp",
+        "type": "Whisky",
+        "relevance": 7
+    },
+    {
+        "precio": 28000,
+        "id": 29,
+        "title": "Whisky Johnnie Walker Blue Label Etiqueta Azul",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/whisky/whisky-johnnie-walker-blue-label-etiqueta-azul-750.webp",
+        "type": "Whisky",
+        "relevance": 5
+    },
+    {
+        "precio": 140,
+        "id": 30,
+        "title": "Energizante Speed 250ml",
+        "size": 250,
+        "thumbnailUrl": "/assets/img/productos/energizantes/speed-250.webp",
+        "type": "Energizante",
+        "relevance": 9
+    },
+    {
+        "precio": 200,
+        "id": 31,
+        "title": "Energizante Speed 473ml",
+        "size": 473,
+        "thumbnailUrl": "/assets/img/productos/energizantes/speed-473.webp",
+        "type": "Energizante",
+        "relevance": 9
+    }
+    
+    
+    
+]

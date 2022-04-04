@@ -1,0 +1,91 @@
+/* -----------------------------------------------------------------------------
+
+# About Page Styles
+
+----------------------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+.field {
+  display: flex;
+  position: realtive;
+  margin: 5em auto;
+  width: 70%;
+  flex-direction: row;
+  box-shadow:
+    1px 1px 0 #ccdc8c,
+    2px 2px 0 #ccdc8c,
+    3px 3px 0 #ccdc8c,
+    4px 4px 0 #ccdc8c,
+    5px 5px 0 #ccdc8c,
+    6px 6px 0 #ccdc8c,
+    7px 7px 0 #ccdc8c;
+}
+
+.field>input[type=text],
+.field>button {
+  display: block;
+  font: 1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+  flex: 1;
+  padding: 0.6em;
+  border: 0.2em solid #ccdc8c;
+}
+
+.field>button {
+  padding: 0.6em 0.8em;
+  background-color: #ccdc8c;
+  color: white;
+  border: none;
+}
+
+.feature-bg {
+  position: relative;
+  margin: 150px;
+  padding: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  span {
+    font-size: 70%;
+    display: block;
+    margin-top: 10px;
+    opacity: 0.7;
+  }
+}
+
+
+ul.social-link-team {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $white-color;
+      background-color: $primary-color;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      text-align: center;
+      border-radius: 50%;
+      display: block;
+      margin: 5px;
+    }
+  }
+}
