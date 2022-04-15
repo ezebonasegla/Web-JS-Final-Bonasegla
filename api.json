@@ -140,7 +140,7 @@
         "title": "Bohemian Pilsener",
         "size": 410,
         "thumbnailUrl": "/assets/img/productos/cerveza/bohemian-pilsener.webp",
-        "type": "Cerveza Industrial",
+        "type": "Cerveza",
         "relevance": 5
     },
     {
@@ -149,7 +149,7 @@
         "title": "Schneider Lata",
         "size": 710,
         "thumbnailUrl": "/assets/img/productos/cerveza/schneider-Lata-710cc.webp",
-        "type": "Cerveza Industrial",
+        "type": "Cerveza",
         "relevance": 8
     },
     {
@@ -158,7 +158,7 @@
         "title": "Corona Lager Rubia",
         "size": 710,
         "thumbnailUrl": "/assets/img/productos/cerveza/corona-710.webp",
-        "type": "Cerveza Importada",
+        "type": "Cerveza",
         "relevance": 8
     },
     {
@@ -167,7 +167,7 @@
         "title": "Corona Rubia Lata",
         "size": 269,
         "thumbnailUrl": "/assets/img/productos/cerveza/corona-269.webp",
-        "type": "Cerveza Importada",
+        "type": "Cerveza",
         "relevance": 7
     },
     {
@@ -176,7 +176,7 @@
         "title": "Peñon del Aguila IPA",
         "size": 473,
         "thumbnailUrl": "/assets/img/productos/cerveza/penon-del-aguila-bazinga-473.webp",
-        "type": "Cerveza Ipa",
+        "type": "Cerveza",
         "relevance": 5
     },
     {
@@ -185,7 +185,7 @@
         "title": "Ogham IPA Lata",
         "size": 473,
         "thumbnailUrl": "/assets/img/productos/cerveza/ogham-ipa-473.webp",
-        "type": "Cerveza Ipa",
+        "type": "Cerveza",
         "relevance": 4
     },
     {

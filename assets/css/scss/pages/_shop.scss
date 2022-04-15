@@ -10,6 +10,10 @@
     list-style: none;
     text-align: center;
 
+    a{
+      color: #323232;
+    }
+
     li {
       display: inline-block;
       font-weight: 700;
@@ -30,6 +34,12 @@
   }
 
   margin-bottom: 80px;
+}
+
+button{
+  background-color: $primary-color !important;
+  color: #323232 !important;
+  border-color: #323232;
 }
 
 .single-product-item {

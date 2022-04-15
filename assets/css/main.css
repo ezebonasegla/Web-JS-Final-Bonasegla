@@ -1187,6 +1187,9 @@ ul.social-link-team li a {
   list-style: none;
   text-align: center;
 }
+.product-filters ul a {
+  color: #323232;
+}
 .product-filters ul li {
   display: inline-block;
   font-weight: 700;
@@ -1202,6 +1205,12 @@ ul.social-link-team li a {
   border: 2px solid #ccdc8c;
   background-color: #ccdc8c;
   color: #fff;
+}
+
+button {
+  background-color: #ccdc8c !important;
+  color: #323232 !important;
+  border-color: #323232;
 }
 
 .single-product-item {

@@ -51,7 +51,11 @@ const actualizarCantidad = e => {
     if (e.target.classList.contains('btn-success')){
         const targetP = e.target.parentNode.parentNode
         const producto = carritoLS[e.target.dataset.id]
-        producto.cantidad = parseInt(targetP.querySelector('input').value)
+        if (targetP.querySelector('input').value != ''){
+            producto.cantidad = parseInt(targetP.querySelector('input').value)
+        }else{
+            producto.cantidad = parseInt(targetP.querySelector('input').placeholder)
+        }
         carritoLS[e.target.dataset.id] = {
             ...producto
         }
@@ -59,6 +63,7 @@ const actualizarCantidad = e => {
     }
     localStorage.setItem('carrito', JSON.stringify(carritoLS))  
 }
+
 
 function cargarDetalleFinal() {
     let carritoLS;
