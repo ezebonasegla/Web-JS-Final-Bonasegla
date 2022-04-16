@@ -77,7 +77,15 @@ function cargarDetalleFinal() {
 
     if (nSubtotal > 5000) {
         nEnvio = 0;
-    }else{
+    }else if(nSubtotal < 1){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No tienes productos en tu carrito',
+            footer: '<a href="shop.html" style="color: #005B92";>🢂 Agregar Productos al Carrito 🢀</a>',
+            allowOutsideClick: false,
+            showConfirmButton: false,
+    })}else{
         nEnvio = 300;
     }
 

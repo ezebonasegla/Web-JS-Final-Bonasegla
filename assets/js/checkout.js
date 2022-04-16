@@ -48,7 +48,7 @@ Array.prototype.filter.call(forms, function (form) {
                 <h5>Apellido: ${arrayUsuarios[0].apellido}</h5><br>
                 <h5>Telefono: ${arrayUsuarios[0].telefono}</h5><br>  
                 <h5>Direccion: ${arrayUsuarios[0].direccion}</h5><br>
-                <h5>Lugar: ${arrayUsuarios[0].localidad}</h5><br>` ,
+                <h5>Lugar: ${arrayUsuarios[0].localidad}</h5><br>`,
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#25AA1F',
@@ -112,15 +112,33 @@ function cargarProductos() {
 
 function cargarPrecioFinal() {
     let carritoLS;
+    let nEnvio;
 
     carritoLS = obtenerProductosLocalStorage();
 
-    const nPrecio = Object.values(carritoLS).reduce((acumulador, {
+    let nPrecio = Object.values(carritoLS).reduce((acumulador, {
         cantidad,
         precio
     }) => acumulador + cantidad * precio, 0)
 
-    templatePrecioTotal.querySelectorAll('span')[1].textContent = nPrecio
+    if (nPrecio > 0 && nPrecio < 5000) {
+        nEnvio = 300;
+        nPrecio = nPrecio + nEnvio
+    } else if (nPrecio > 5000) {
+        nEnvio = 0;
+    } else {
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No tienes productos en tu carrito',
+            footer: '<a href="shop.html" style="color: #005B92";>🢂 Agregar Productos al Carrito 🢀</a>',
+            allowOutsideClick: false,
+            showConfirmButton: false,
+        })
+    }
+
+    templatePrecioTotal.querySelectorAll('span')[1].textContent = nEnvio
+    templatePrecioTotal.querySelectorAll('span')[3].textContent = nPrecio
     const clone = templatePrecioTotal.cloneNode(true)
     fragment.appendChild(clone)
     itemsCarrito.appendChild(fragment)

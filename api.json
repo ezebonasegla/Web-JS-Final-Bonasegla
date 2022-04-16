@@ -277,8 +277,32 @@
         "thumbnailUrl": "/assets/img/productos/energizantes/speed-473.webp",
         "type": "Energizante",
         "relevance": 9
+    },
+    {
+        "precio": 800,
+        "id": 32,
+        "title": "Campari",
+        "size": 750,
+        "thumbnailUrl": "/assets/img/productos/otros/campari.webp",
+        "type": "Otros",
+        "relevance": 7
+    },
+    {
+        "precio": 250,
+        "id": 33,
+        "title": "Baggio Naranja 1Lt",
+        "size": 1000,
+        "thumbnailUrl": "/assets/img/productos/sinAlcohol/baggio.webp",
+        "type": "Sin-Alcohol",
+        "relevance": 8
+    },
+    {
+        "precio": 300,
+        "id": 34,
+        "title": "Coca Cola Original 2.25Lt",
+        "size": 2250,
+        "thumbnailUrl": "/assets/img/productos/sinAlcohol/cocacola.png",
+        "type": "Sin-Alcohol",
+        "relevance": 9
     }
-    
-    
-    
 ]

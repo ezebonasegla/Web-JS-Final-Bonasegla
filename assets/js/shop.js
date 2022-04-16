@@ -428,6 +428,7 @@ const addCarrito = e => {
             style: {
                 background: "linear-gradient(to right, #ccdc8c, #A4DC8C)",
             },
+            destination: "cart.html",
             onClick: function () {} // Callback after click
         }).showToast();
         setCarrito(e.target.parentElement)
